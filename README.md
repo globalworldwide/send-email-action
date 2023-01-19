@@ -5,8 +5,6 @@ An action that simply sends a mail to multiple recipients.
 Some features:
 - plain text body
 - HTML body
-- multipart body (plain text + HTML)
-- Markdown to HTML converting
 - file attachments (supports globbing)
 
 
@@ -54,8 +52,6 @@ Some features:
     in_reply_to: <random-luke@example.com>
     # Optional unsigned/invalid certificates allowance:
     ignore_cert: true
-    # Optional converting Markdown to HTML (set content_type to text/html too):
-    convert_markdown: true
     # Optional attachments:
     attachments: attachments.zip,git.diff,./dist/static/*.js
     # Optional priority: 'high', 'normal' (default) or 'low'

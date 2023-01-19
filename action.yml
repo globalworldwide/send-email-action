@@ -48,9 +48,6 @@ inputs:
   ignore_cert:
     description: Allow unsigned/invalid certificates
     required: false
-  convert_markdown:
-    description: Convert body from Markdown to HTML (set content_type input as text/html too)
-    required: false
   attachments:
     description: Files that will be added to mail message attachments (separated with comma)
     required: false
@@ -59,4 +56,5 @@ inputs:
     required: false
 runs:
   using: node16
-  main: main.js
+  main: dist/index.js
+
